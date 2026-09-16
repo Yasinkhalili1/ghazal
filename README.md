@@ -1,6 +1,7 @@
-# 🦌 غزال (Ghazal)
+# غزال (Ghazal)
 
 **غزال** — یک وب‌سایت موسیقی فارسی مدرن و ریسپانسیو؛ مرجع شنیدنی‌های روز ایران و جهان.
+**Ghazal** — a modern, responsive Persian music website; your destination for today's best Iranian and international music.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
@@ -11,7 +12,7 @@
 
 ---
 
-## ✨ امکانات
+## فارسی | امکانات
 
 ### 🎵 پلیر حرفه‌ای
 - پخش/توقف، قبلی/بعدی با **صف پخش (Queue)**
@@ -46,64 +47,103 @@
 
 ---
 
-## 🚀 اجرا
+## English | Features
 
-ساده‌ترین راه — با هر سرور استاتیک (نیازی به بک‌اند نیست):
+### 🎵 Professional Audio Player
+- Play/Pause, Previous/Next with a **play Queue**
+- **Shuffle** and **Repeat** modes
+- Green progress bar with current/remaining time
+- **Playback position persists** — resumes where you left off after a page refresh
+- **Animated equalizer** while playing
+- **Keyboard shortcuts**: `Space` play/pause, `←`/`→` previous/next, `↑`/`↓` volume
 
-### روش ۱: پایتون
-```bash
-cd Ghazal
-python -m http.server 8234
-# باز کردن: http://localhost:8234
-```
+### 🎧 Song Management
+- **Live search** by song name or artist
+- Filters: **All / Most Popular / Best Selling**
+- **Play All** songs in order
+- **Play history** (last 20 tracks, saved in localStorage)
+- **Star rating ⭐** per song (persistent)
 
-### روش ۲: نصب وابستگی‌ها
-```bash
-npm install
-```
-> **نکته:** `node_modules` برای FontAwesome و Bootstrap لازم است. بدون نصب، CDN ها هم جایگزین می‌شوند.
+### 👤 User Accounts
+- **Login / Register** with a beautiful Persian UI
+- Users stored in **localStorage**
+
+### 🛒 Store
+- **Shopping cart** with quantity +/− and remove
+- **Demo checkout** with card number + **discount codes** (GHAZAL10 = 10%, GHAZAL20 = 20%)
+- **Free demo download** next to each song
+- **Share** songs via Telegram / WhatsApp / copy link
+
+### 🎨 Appearance
+- **Dark/Light theme** toggle (preference saved)
+- **Fully responsive** — mobile, tablet, desktop
+- Dedicated artist page with full stats
+- Professional footer with quick links & newsletter
 
 ---
 
-## 📁 ساختار پروژه
+## 🚀 اجرا | How to Run
+
+Simple — works with any static server (no backend needed):
+
+### روش ۱ | Method 1: Python
+```bash
+cd Ghazal
+python -m http.server 8234
+# باز کردن | Open: http://localhost:8234
+```
+
+### روش ۲ | Method 2: Install dependencies
+```bash
+npm install
+```
+
+> **نکته | Note:** `node_modules` is used for FontAwesome & Bootstrap assets. You can also use CDN links instead.
+
+---
+
+## 📁 ساختار پروژه | Project Structure
 
 ```
 Ghazal/
-├── index.html              # صفحه اصلی
+├── index.html              # صفحه اصلی | Main page
 ├── assets/
 │   └── js/
-│       ├── app.js          # منطق برنامه
-│       └── data.js         # داده خواننده‌ها و آهنگ‌ها
+│       ├── app.js          # منطق برنامه | App logic
+│       └── data.js         # داده خواننده‌ها | Artists & songs data
 ├── public/
-│   ├── css/style.css       # استایل‌ها
-│   ├── images/             # تصاویر خواننده‌ها و لوگو
-│   └── Music/              # فایل‌های صوتی
+│   ├── css/style.css       # استایل‌ها | Styles
+│   ├── fonts/              # فونت ایران‌سنس | IRANSansX font
+│   ├── images/             # تصاویر خواننده‌ها و لوگو | Covers & logo
+│   └── Music/              # فایل‌های صوتی | Audio files
 └── package.json
 ```
 
 ---
 
-## 🎧 خواننده‌ها
-- **امیر تتلو**
-- **محمد رضا شایع**
-- **تیلور سویفت**
-- **شادمهر عقیلی**
+## 🎧 خواننده‌ها | Artists
+
+- **امیر تتلو | Amir Tataloo**
+- **محمد رضا شایع | Mohammad Reza Shayea**
+- **تیلور سویفت | Taylor Swift**
+- **شادمهر عقیلی | Shadmehr Aghili**
 
 ---
 
-## 🛠 تکنولوژی‌ها
+## 🛠 تکنولوژی‌ها | Technologies
 
-| تکنولوژی | کاربرد |
-|-----------|--------|
-| **HTML5 + CSS3** | ساختار و استایل |
-| **JavaScript (Vanilla)** | منطق کامل (بدون فریم‌ورک) |
-| **Bootstrap 5** | ریسپانسیو |
-| **FontAwesome 6** | آیکون‌ها |
-| **Swiper 11** | اسلایدر خواننده‌ها |
-| **localStorage** | ذخیره داده‌ها (بدون بک‌اند) |
+| تکنولوژی | کاربرد | Technology | Usage |
+|-----------|--------|-----------|-------|
+| **HTML5 + CSS3** | ساختار و استایل | | Structure & styling |
+| **JavaScript (Vanilla)** | منطق کامل (بدون فریم‌ورک) | | Full logic (no framework) |
+| **Bootstrap 5** | ریسپانسیو | | Responsive layout |
+| **FontAwesome 6** | آیکون‌ها | | Icons |
+| **Swiper 11** | اسلایدر خواننده‌ها | | Artist slider |
+| **localStorage** | ذخیره داده‌ها (بدون بک‌اند) | | Data storage (no backend) |
 
 ---
 
-## 📄 مجوز
+## 📄 مجوز | License
 
 این پروژه فقط برای **نمایش و آموزش** ساخته شده است. فایل‌های صوتی و تصویری متعلق به صاحبان اصلی خودشان هستند.
+This project is created for **demonstration and educational purposes only**. Audio and image files belong to their respective owners.
