@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temp / backup
+*.bak
+*.tmp
+
+# Env / secrets
+.env
+.env.local
+
+# Music files (not tracked in git — large), keep covers only
+public/Music/**
+!public/Music/**/*.webp
+!public/Music/**/*.jpg
+!public/Music/**/*.jpeg
+!public/Music/**/*.png
